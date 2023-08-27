@@ -8,7 +8,7 @@ use regex::{Regex, Captures};
 use lazy_static::lazy_static;
 
 // Constants
-const PROXIES_URL: &str = "https://raw.githubusercontent.com/Stefanuk12/RoGoldPatcher/main/proxies.txt";
+const PROXIES_URL: &str = "https://raw.githubusercontent.com/skyyiscool/RoGoldPatcher/main/proxies.txt";
 lazy_static! {
     static ref RE: Regex = Regex::new(r"(?m)(setTimeout\(async\(\)=>\{let \w=await(?:.+)Session Invalidated(?:.+)location\.reload\(\)\}\)\}\},1e3\))").unwrap();
     static ref RE2: Regex = Regex::new(r#"(?m)https://www\.rogold\.live/api/info/"\+(\w)"#).unwrap();
